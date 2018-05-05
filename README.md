@@ -21,6 +21,7 @@ Example:
 # Example app.py file
 from wat import wat
 import urllib
+
 a = 1
 b = 2
 
@@ -43,13 +44,13 @@ otherwise have access to at the time of the breakpoint.
 $ python app.py
 (wat Interactive Console)
 >>> a
-10    # local var overwriting global var
+10                          # local var overwrites global var
 >>> b
-2     # global var
+2                           # global var
 >>> c
-3     # local var
+3                           # local var
 >>> urllib
-<module 'urllib' from ...>  # still available
+<module 'urllib' from ...>  # imports still available
 ```
 
 ### Leave interactive console & proceed with code execution
