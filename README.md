@@ -19,8 +19,8 @@ Setting an interactive breakpoint is as easy as calling `wat()` from whatever li
 Example:
 ```python
 # Example app.py file
-
 from wat import wat
+import urllib
 a = 1
 b = 2
 
@@ -48,6 +48,8 @@ $ python app.py
 2     # global var
 >>> c
 3     # local var
+>>> urllib
+<module 'urllib' from ...>  # still available
 ```
 
 ### Leave interactive console & proceed with code execution
