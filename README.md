@@ -1,6 +1,6 @@
 # wat
 
-Simple interactive breakpoint library with with automatic variable injection.
+Simple interactive breakpoint library with automatic variable injection, providing access to both local and global variables.
 
 # Installation
 
