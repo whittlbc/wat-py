@@ -2,6 +2,12 @@
 
 Simple interactive breakpoint library with with automatic variable injection.
 
+# Installation
+
+```
+$ pip install wat-py
+```
+
 # Quickstart
 
 ```python
