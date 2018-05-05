@@ -1,0 +1,9 @@
+*.egg-info/
+*.log
+*.pem
+*.pyc
+.idea/
+bin/
+build/
+dist/
+venv/
