@@ -50,7 +50,7 @@ $ python app.py
 >>> c
 3                           # local var
 >>> urllib
-<module 'urllib' from ...>  # imports still available
+<module 'urllib' from ...>  # imported module still available
 ```
 
 ### Leave interactive console & proceed with code execution
@@ -63,11 +63,12 @@ $ python app.py
 
 # Reason
 
-The built-in `code.interact` method Python provides requires you to pass in the set of vars you want available in the 
-interactive console, which gives you the option of passing in `locals()`, `globals()`, or manually creating a dict with 
-the combination of both local and global vars. I got sick of writing `import code; code.inteact(local=locals())`
-whenever I needed to set a breakpoint, realizing I needed some global vars from the import statements at the top of my 
-file, and then having to manually re-import those global vars.
+The built-in `code.interact` method Python provides requires you to pass in the specific variables you want to have 
+available in the interactive console, which gives you the option of passing in `locals()`, `globals()`, or manually 
+creating a dict with the combination of both local and global vars (which no one wants to do every time they want to 
+simply set a breakpoint). I got sick of writing `import code; code.inteact(local=locals())` whenever I needed to set a 
+breakpoint, realizing I needed some global vars from the import statements at the top of my file, and then having to 
+manually re-import those global vars.
 
 # License
 
