@@ -46,7 +46,7 @@ if __name__ == '__main__':
 Running `app.py` will call the `do_something` function and pause code execution right after `c` is defined.
 An interactive console will appear, giving you access to all vars (both local and global) that `do_something` would 
 otherwise have access to at the time of the breakpoint. 
-```
+```python
 $ python app.py
 (wat Interactive Console)
 >>> a
