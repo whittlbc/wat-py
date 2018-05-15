@@ -1,6 +1,10 @@
 # wat
 
-Simple interactive breakpoint library with automatic variable injection, providing access to both local and global variables.
+Simple interactive breakpoint library with automatic variable injection, providing access to **both** local and global variables.
+
+**Better than** `print` because you can actually interact with your variables.<br>
+**Better than** `code.interact` because you get both local and global variables.<br>
+**Better than anything else** because it's short and sweet.<br>
 
 # Installation
 
