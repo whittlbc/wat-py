@@ -17,7 +17,7 @@ $ pip install wat-py
 ```python
 from wat import wat
 
-wat() # set breakpoint
+wat() # set interactive breakpoint
 ```
 
 # Usage
@@ -49,7 +49,8 @@ if __name__ == '__main__':
 
 Running `app.py` will call the `do_something` function and pause code execution right after `c` is defined.
 An interactive console will appear, giving you access to all vars (both local and global) that `do_something` would 
-otherwise have access to at the time of the breakpoint. 
+otherwise have access to at the time of the breakpoint:
+
 ```python
 $ python app.py
 (wat Interactive Console)
@@ -75,8 +76,7 @@ $ python app.py
 
 The built-in `code.interact` method Python provides requires you to pass in the specific variables you want to have 
 available in the interactive console, which gives you the option of passing in `locals()`, `globals()`, or manually 
-creating a dict with the combination of both local and global vars (which no one wants to do every time they want to 
-simply set a breakpoint). I got sick of writing `import code; code.inteact(local=locals())` whenever I needed to set a 
+creating a dict with the combination of both local and global vars (which no one wants to do every single time they want to set a breakpoint). I got sick of writing `import code; code.inteact(local=locals())` whenever I needed to set a 
 breakpoint, realizing I needed some global vars from the import statements at the top of my file, and then having to 
 manually re-import those global vars.
 
