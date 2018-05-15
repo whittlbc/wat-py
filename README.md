@@ -4,7 +4,7 @@ Simple interactive breakpoint library with automatic variable injection, providi
 
 **Better than** `print` because you can actually interact with your variables.<br>
 **Better than** `code.interact` because you get both local and global variables.<br>
-**Better than anything else** because it's short and sweet, has **no** dependencies, and works with both Python 2 & 3.<br>
+**Better than anything else** because it's short and sweet, has no dependencies, and works with both Python 2 & 3.<br>
 
 # Installation
 
